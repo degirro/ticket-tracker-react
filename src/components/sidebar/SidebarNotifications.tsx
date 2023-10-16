@@ -32,7 +32,11 @@ export const SidebarNotifications: React.FC<props> = ({
 }) => {
   const queryClient = useQueryClient();
 
-  const handleUpdateUserStatusConfirm = async (workspaceId: number) => {
+  const handleUpdateUserStatusConfirm = async (
+    e: React.MouseEvent<HTMLButtonElement>,
+    workspaceId: number
+  ) => {
+    e.stopPropagation();
     try {
       await updateUserStatusConfirm(workspaceId);
       queryClient.invalidateQueries("userWorkspacesData");
@@ -43,7 +47,11 @@ export const SidebarNotifications: React.FC<props> = ({
     }
   };
 
-  const handleUpdateUserStatusDecline = async (workspaceId: number) => {
+  const handleUpdateUserStatusDecline = async (
+    e: React.MouseEvent<HTMLButtonElement>,
+    workspaceId: number
+  ) => {
+    e.stopPropagation();
     try {
       await updateUserStatusDecline(workspaceId);
       queryClient.invalidateQueries("userWorkspacesData");
@@ -52,8 +60,8 @@ export const SidebarNotifications: React.FC<props> = ({
     }
   };
 
-  const handleRemoveNotif = (id: number) => {
-    console.log(id);
+  const handleRemoveNotif = (e: React.MouseEvent<SVGElement>, id: number) => {
+    e.stopPropagation();
     postRemoveNotification({ notifId: id });
   };
 
@@ -75,15 +83,15 @@ export const SidebarNotifications: React.FC<props> = ({
                 {item.type === "team" ? (
                   <WorkspaceTeamButtonContainer>
                     <TeamConfirmButton
-                      onClick={() =>
-                        handleUpdateUserStatusConfirm(item.workspace.id)
+                      onClick={(e) =>
+                        handleUpdateUserStatusConfirm(e, item.workspace.id)
                       }
                     >
                       Accept
                     </TeamConfirmButton>
                     <TeamDeclineButton
-                      onClick={() =>
-                        handleUpdateUserStatusDecline(item.workspace.id)
+                      onClick={(e) =>
+                        handleUpdateUserStatusDecline(e, item.workspace.id)
                       }
                     >
                       Decline
@@ -91,7 +99,7 @@ export const SidebarNotifications: React.FC<props> = ({
                   </WorkspaceTeamButtonContainer>
                 ) : (
                   <DeleteNotificationButton
-                    onClick={() => handleRemoveNotif(item.id)}
+                    onClick={(e) => handleRemoveNotif(e, item.id)}
                   />
                 )}
               </NotificationTextContainer>
