@@ -1,0 +1,33 @@
+export const lightTheme = {
+  body: "#F2F3FC",
+  text: "#1d1d1d",
+  subtitle: "#3a3a3a",
+  background: "#ffffff",
+  cardBg: "rgb(255, 255, 255, 0.3)",
+  notifBg: "rgb(255, 255, 255, 0.6)",
+  hover: "#cfcfcf",
+  button: "#00b800",
+  header: "#cfcfcf",
+  border: "#cfcfcf",
+  inputBorder: "rgb(0,0,0,0.5)",
+  overlay: "rgb(0,0,0,0.2)",
+  borderLight: "rgb(0,0,0,0.07)",
+  textLight: "rgb(0,0,0,0.5)",
+};
+
+export const darkTheme = {
+  body: "#141414",
+  text: "#f1f1f1",
+  subtitle: "#9e9e9e",
+  background: "#1d1d1d",
+  cardBg: "rgb(0, 0, 0,0.3)",
+  notifBg: "rgb(15, 15, 15,0.8)",
+  button: "#00b800",
+  hover: "#353535",
+  header: "#302c2c",
+  border: "#302c2c",
+  inputBorder: "rgb(250,250,250,0.5)",
+  overlay: "rgb(250,250,250,0.07)",
+  borderLight: "rgb(250,250,250,0.07)",
+  textLight: "rgb(250,250,250,0.3)",
+};
