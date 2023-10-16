@@ -17,7 +17,7 @@ import {
   WorkspaceTeamButtonContainer,
 } from "../../utils/styles/sidebar/SidebarNotificationsStyled";
 import { notificationsType } from "../../utils/types/types";
-import { showNotifVariants } from "../../utils/variants/ModalVariants";
+import { showNotifVariants } from "../../utils/variants/variants";
 
 type props = {
   showNotif: boolean;

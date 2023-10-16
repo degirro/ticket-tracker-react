@@ -1,6 +1,5 @@
 import { createContext, PropsWithChildren, useState } from "react";
 import { TicketParams } from "../types/types";
-import { useNavigate } from "react-router-dom";
 
 type TicketsContextType = {
   handleTabs: (btnId: string) => void;

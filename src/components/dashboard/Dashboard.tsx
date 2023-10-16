@@ -36,6 +36,7 @@ export const Dashboard = () => {
       socket.off("onGetUserWorkspaces", onUserWorkspacesChange);
     };
   }, []);
+
   return (
     <DashboardSection
       initial={{ opacity: 0 }}

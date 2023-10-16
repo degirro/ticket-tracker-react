@@ -9,7 +9,7 @@ import {
   WorkspaceName,
 } from "../../utils/styles/tickets/user-tickets/UserTicketsStyled";
 import { UserTicketItem } from "./UserTicketItem";
-import { showUserTicketsVariants } from "../../utils/variants/ModalVariants";
+import { showUserTicketsVariants } from "../../utils/variants/variants";
 import { TicketsDataType, UserTicketsDataType } from "../../utils/types/types";
 
 type props = {
@@ -26,8 +26,6 @@ export const UserTicketsWorkspace: React.FC<props> = ({ data }) => {
       prev === workspaceId ? null : workspaceId
     );
   };
-
-  console.log(data);
 
   return (
     <TicketsWorkspaceContainer>

@@ -6,7 +6,7 @@ import {
 } from "../../utils/styles/sidebar/SidebarThemeStyled";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 import { ThemeContext } from "../../utils/context/ThemeContext";
-import { themeButtonVariants } from "../../utils/variants/ModalVariants";
+import { themeButtonVariants } from "../../utils/variants/variants";
 
 export const SideBarTheme = () => {
   const { handleTheme, darkSwitch } = useContext(ThemeContext);

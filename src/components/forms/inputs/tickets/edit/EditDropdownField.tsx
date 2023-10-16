@@ -19,7 +19,7 @@ import {
   TicketFormFieldProps,
   UserOptionsParams,
 } from "../../../../../utils/types/types";
-import { optionsVariants } from "../../../../../utils/variants/ModalVariants";
+import { optionsVariants } from "../../../../../utils/variants/variants";
 
 type RegisterStrings = "status" | "issueType" | "priority";
 

@@ -24,9 +24,6 @@ export const useTicketsData = (id: string) => {
     getTicketsData
   );
 
-  console.log(data);
-  console.log(user);
-
   useEffect(() => {
     queryClient.invalidateQueries("ticketsData");
   }, [tabFilter, searchQuery, filterOption]);

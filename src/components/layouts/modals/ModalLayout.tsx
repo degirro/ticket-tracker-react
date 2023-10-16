@@ -9,7 +9,7 @@ import {
 import {
   overlayVariants,
   modalVariants,
-} from "../../../utils/variants/ModalVariants";
+} from "../../../utils/variants/variants";
 
 type props = {
   children: React.ReactNode;

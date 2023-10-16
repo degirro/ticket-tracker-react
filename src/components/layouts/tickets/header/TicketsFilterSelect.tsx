@@ -3,7 +3,7 @@ import {
   TicketsFilterSelectContainer,
 } from "../../../../utils/styles/workspace/tickets/TicketsFilterSelectStyled";
 import { filterOptionsProps } from "../../../../utils/types/types";
-import { ticketOptionsVariants } from "../../../../utils/variants/ModalVariants";
+import { ticketOptionsVariants } from "../../../../utils/variants/variants";
 
 type props = {
   isOpen: boolean;

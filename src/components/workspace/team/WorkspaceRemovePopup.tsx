@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import { showRemoveVariants } from "../../../utils/variants/ModalVariants";
+import { showRemoveVariants } from "../../../utils/variants/variants";
 import {
   ConfirmContainer,
   ConfirmRemoveText,
